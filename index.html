@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff5f5">
+<title>Nuestra Gran historia ❤️</title>
+<style>
+:root{--rose:#c84d6a;--rose2:#f7cbd4;--cream:#fff9f2;--ink:#4b2934;--muted:#866b73;--gold:#d7a85c}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:radial-gradient(circle at top,#fff 0,#fff5f5 42%,#fff9f2 100%);min-height:100vh}
+button,input{font:inherit}button{cursor:pointer;border:0;border-radius:999px;padding:12px 18px;background:var(--rose);color:white;box-shadow:0 5px 14px #c84d6a25;transition:transform .18s}button:active{transform:scale(.97)}button.secondary{background:#fff;color:var(--rose);border:1px solid #f0bdc9;box-shadow:none}
+.wrap{max-width:850px;margin:auto;padding:22px 16px 60px}.center{text-align:center}.eyebrow{letter-spacing:.18em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--rose)}h1{font-size:clamp(2.4rem,9vw,4.8rem);line-height:.98;margin:14px 0;color:#9e344f;font-weight:normal}h2{font-weight:normal;font-size:clamp(1.7rem,5vw,2.3rem);margin:0 0 10px}p{line-height:1.65}.lead{font-size:1.12rem;color:var(--muted);max-width:560px;margin:0 auto 22px}.hero{padding:40px 14px 28px}.heart{font-size:32px;animation:pulse 1.6s infinite}@keyframes pulse{50%{transform:scale(1.15)}}.panel{background:#ffffffc9;border:1px solid #f3d9de;border-radius:24px;padding:22px;margin:18px 0;box-shadow:0 12px 35px #a64b5a0d}.section-title{display:flex;align-items:center;gap:10px;margin-bottom:14px}.section-title span{font-size:1.3rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photo{border-radius:16px;overflow:hidden;background:#f9e3e7;min-height:190px;position:relative;display:flex;flex-direction:column;justify-content:end;box-shadow:0 5px 16px #7e344015}.photo img{width:100%;height:220px;object-fit:cover;position:absolute;inset:0}.photo .placeholder{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(145deg,#f9dce3,#fff0e6);font-size:2.5rem}.photo .caption{position:relative;padding:34px 12px 12px;background:linear-gradient(transparent,#38151dcc);color:#fff;font-size:.95rem}.letter{background:#fffaf2;border:1px solid #eedcc9;border-radius:18px;padding:20px;position:relative}.letter:before{content:"✦";color:var(--gold);position:absolute;right:16px;top:10px}.game-card{border:1px dashed #e9aab8;background:#fff7f8;border-radius:18px;padding:18px;margin:12px 0}.heart-button{width:72px;height:72px;border-radius:50%;font-size:30px;padding:0;background:#f2a5b7}.progress{height:7px;background:#f5dce2;border-radius:10px;overflow:hidden;margin:14px 0}.progress div{height:100%;background:var(--rose);width:0%;transition:width .25s}.hidden{display:none!important}.secret{border-radius:16px;padding:18px;background:#fff0f3;border:1px solid #f1c5cf;margin-top:12px}.footer{text-align:center;color:var(--muted);font-size:.9rem;padding:28px 0}.gate{position:fixed;z-index:20;inset:0;background:linear-gradient(145deg,#fff1f4,#fffaf2);display:grid;place-items:center;padding:22px}.gatebox{max-width:420px;width:100%;text-align:center;background:#fff;border:1px solid #f0cbd3;border-radius:28px;padding:28px;box-shadow:0 20px 70px #9b40521a}.gate input{width:100%;padding:13px;border:1px solid #e8c4cc;border-radius:12px;margin:12px 0;color:var(--ink);background:#fffafa}.error{color:#b32c4d;font:14px Arial,sans-serif;min-height:20px}.tiny{font:12px Arial,sans-serif;color:#987e85}.admin{font:12px Arial,sans-serif;color:#8e737b;text-align:center;margin-top:16px}.admin button{font:12px Arial,sans-serif;padding:8px 12px}.tag{display:inline-block;border-radius:999px;background:#fff0f3;color:#9e344f;padding:6px 11px;font:12px Arial,sans-serif;margin:4px}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.photo img{height:240px}.hero{padding-top:58px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<!--
+PERSONALIZACIÓN RÁPIDA:
+1) Cambia la contraseña en CONFIG.password.
+2) Pon tus imágenes en la carpeta fotos/ y escribe sus nombres en CONFIG.photos.
+3) Edita cartas, preguntas y mensajes directamente aquí en CONFIG.
+NOTA: la contraseña de esta plantilla es una barrera visual, NO seguridad real. Al ser una web estática, alguien técnico podría inspeccionar el código.
+-->
+<script>
+const CONFIG = {
+  password: "Almendrita2026",
+  title: "Nuestra Gran historia",
+  nickname: "Almendrita",
+  intro: "Hay recuerdos que merecen su propio lugar en el mundo. Este rinconcito es para nosotros, para lo que hemos vivido y para todo lo bonito que todavía nos espera.",
+  photos: [
+    {src:"fotos/foto01.jpg", caption:"Un recuerdo que siempre quiero guardar."},
+    {src:"fotos/foto02.jpg", caption:"Contigo, los días tienen algo especial."},
+    {src:"fotos/foto03.jpg", caption:"Una pequeña parte de nuestra historia."},
+    {src:"fotos/foto04.jpg", caption:"De esos momentos que me hacen sonreír."},
+    {src:"fotos/foto05.jpg", caption:"Mi lugar favorito también puede ser una persona."},
+    {src:"fotos/foto06.jpg", caption:"Y todavía nos quedan tantos recuerdos por crear."},
+    {src:"fotos/foto07.jpg", caption:"Un instante nuestro, guardado para siempre."},
+    {src:"fotos/foto08.jpg", caption:"Gracias por estar en mi historia."},
+    {src:"fotos/foto09.jpg", caption:"Tú haces que lo sencillo sea especial."},
+    {src:"fotos/foto10.jpg", caption:"Una foto, mil cosas que recuerdo."},
+    {src:"fotos/foto11.jpg", caption:"Qué bonito coincidir contigo."},
+    {src:"fotos/foto12.jpg", caption:"Esto también es parte de nuestro camino."}
+  ],
+  letters: [
+    {title:"Una cosita que quiero decirte", body:"Almendrita, me gusta tenerte en mi vida. Gracias por los momentos, las risas y hasta por esas pequeñas cosas que quizá parecen simples, pero para mí significan mucho. ❤️"},
+    {title:"Para cuando necesites sonreír", body:"Si llegaste hasta aquí, quiero recordarte que eres alguien muy especial para mí. Ojalá esta página te saque una sonrisa, como tú tantas veces me la sacas a mí."}
+  ],
+  question: "¿Cuál de estos planes elegiría para repetir contigo?",
+  answers: ["Una aventura juntos", "Quedarnos hablando por horas", "Cualquier plan si es contigo"],
+  correctAnswer: 2,
+  finalTitle: "Mi recuerdo favorito todavía no ha pasado…",
+  finalMessage: "Porque todavía nos quedan lugares por conocer, abrazos por darnos, historias por contar y muchas versiones de nosotros por descubrir. Gracias por ser parte de mi vida, Almendrita. Te quiero. ❤️"
+};
+</script>
+<div id="gate" class="gate">
+  <div class="gatebox">
+    <div class="heart">♥</div><div class="eyebrow">Un pequeño secreto para ti</div>
+    <h2 id="gateTitle">Nuestra Gran historia</h2>
+    <p>He guardado algo bonito para ti, <span id="gateNick">Almendrita</span>.</p>
+    <p class="tiny">Introduce nuestra palabra secreta para entrar.</p>
+    <form id="gateForm"><input id="pass" type="password" autocomplete="off" placeholder="Palabra secreta" aria-label="Palabra secreta"><button type="submit" style="width:100%">Abrir nuestro recuerdo ♥</button></form>
+    <div id="gateError" class="error" role="status"></div>
+    <p class="tiny">Hecho con cariño, solo para ti.</p>
+  </div>
+</div>
+<main class="wrap">
+  <header class="hero center">
+    <div class="eyebrow">Un universo pequeñito para dos</div><div class="heart">♡</div>
+    <h1 id="title">Nuestra Gran historia</h1>
+    <p class="lead" id="intro"></p><span class="tag">tú + yo</span><span class="tag">nuestros recuerdos</span>
+  </header>
+  <section class="panel">
+    <div class="section-title"><span>📷</span><h2>Nuestros recuerdos</h2></div>
+    <p>Pequeños instantes que, juntos, cuentan algo enorme.</p>
+    <div class="grid" id="photos"></div>
+  </section>
+  <section class="panel">
+    <div class="section-title"><span>💌</span><h2>Cartas para mi Almendrita</h2></div>
+    <p>Hay palabras que quiero que encuentres despacito.</p>
+    <div id="letters"></div>
+  </section>
+  <section class="panel">
+    <div class="section-title"><span>💗</span><h2>Un reto de cariño</h2></div>
+    <div class="game-card center">
+      <span class="tag">Reto 1</span><h3>El corazón paciente</h3>
+      <p>Presiona el corazón <strong>10 veces</strong>. Cada toque nos acerca a un recuerdo escondido.</p>
+      <button id="heartBtn" class="heart-button" aria-label="Toca el corazón">♥</button>
+      <div class="progress"><div id="heartProgress"></div></div><p id="heartCount">0 de 10 toques</p>
+      <div id="heartSecret" class="secret hidden"><strong>¡Lo encontraste!</strong><p id="heartMessage">Mi parte favorita de los recuerdos es que siempre me llevan a ti. ❤️</p></div>
+    </div>
+    <div class="game-card">
+      <span class="tag">Reto 2</span><h3>¿Qué escogeríamos?</h3><p id="question"></p><div id="answers"></div><div id="answerResult" class="secret hidden"></div>
+    </div>
+    <div class="game-card center">
+      <span class="tag">Reto 3</span><h3>Una última sorpresa</h3>
+      <p>Hay un mensaje reservado para el final. Cuando quieras, toca para abrirlo.</p>
+      <button id="finalBtn" class="secondary">Abrir mi mensaje final ✨</button>
+      <div id="finalSecret" class="secret hidden"><h2 id="finalTitle"></h2><p id="finalMessage"></p><div class="heart">♥</div></div>
+    </div>
+  </section>
+  <div class="footer">Hecho con amor para <span id="footerNick">Almendrita</span> · Nuestra historia continúa…</div>
+  <div class="admin">Para editar esta página, abre <code>index.html</code> en un editor de texto y modifica el bloque CONFIG al principio del archivo.</div>
+</main>
+<script>
+document.getElementById("gateTitle").textContent=CONFIG.title;
+document.getElementById("gateNick").textContent=CONFIG.nickname;
+document.getElementById("title").textContent=CONFIG.title;
+document.getElementById("intro").textContent=CONFIG.intro;
+document.getElementById("footerNick").textContent=CONFIG.nickname;
+document.getElementById("gateForm").addEventListener("submit",e=>{e.preventDefault();if(document.getElementById("pass").value===CONFIG.password){document.getElementById("gate").classList.add("hidden");sessionStorage.setItem("ngh-open","yes")}else{document.getElementById("gateError").textContent="Esa no era la palabra secreta. Inténtalo otra vez ❤️"}});
+if(sessionStorage.getItem("ngh-open")==="yes")document.getElementById("gate").classList.add("hidden");
+const photos=document.getElementById("photos");
+CONFIG.photos.forEach((p,i)=>{const card=document.createElement("article");card.className="photo";const placeholder=document.createElement("div");placeholder.className="placeholder";placeholder.textContent="♡";card.appendChild(placeholder);const img=document.createElement("img");img.src=p.src;img.alt="Recuerdo "+(i+1);img.loading="lazy";img.onerror=()=>img.remove();img.onload=()=>placeholder.remove();card.appendChild(img);const cap=document.createElement("div");cap.className="caption";cap.textContent=p.caption;card.appendChild(cap);photos.appendChild(card)});
+const letters=document.getElementById("letters");
+CONFIG.letters.forEach((l,i)=>{const wrap=document.createElement("div");wrap.className="game-card";const b=document.createElement("button");b.className="secondary";b.style.width="100%";b.textContent="🔒 "+l.title;const body=document.createElement("div");body.className="secret hidden";body.textContent=l.body;b.addEventListener("click",()=>{body.classList.toggle("hidden");b.textContent=(body.classList.contains("hidden")?"🔒 ":"💌 ")+l.title});wrap.append(b,body);letters.appendChild(wrap)});
+let taps=0;document.getElementById("heartBtn").addEventListener("click",()=>{taps=Math.min(taps+1,10);document.getElementById("heartCount").textContent=taps+" de 10 toques";document.getElementById("heartProgress").style.width=(taps*10)+"%";if(taps===10){document.getElementById("heartSecret").classList.remove("hidden");document.getElementById("heartBtn").textContent="💗"}});
+document.getElementById("heartMessage").textContent="Mi parte favorita de los recuerdos es que siempre me llevan a ti, "+CONFIG.nickname+". ❤️";
+document.getElementById("question").textContent=CONFIG.question;
+const answers=document.getElementById("answers"),result=document.getElementById("answerResult");
+CONFIG.answers.forEach((a,i)=>{const b=document.createElement("button");b.className="secondary";b.style.display="block";b.style.width="100%";b.style.margin="8px 0";b.textContent=a;b.addEventListener("click",()=>{result.classList.remove("hidden");result.textContent=i===CONFIG.correctAnswer?"¡Respuesta aceptada! Aunque, en realidad, cualquier plan contigo tiene algo especial. ❤️":"Qué bonito plan. Lo importante es compartirlo contigo. ¡Prueba otra opción para descubrir mi respuesta secreta!";if(i===CONFIG.correctAnswer){[...answers.querySelectorAll("button")].forEach(x=>x.disabled=true)}});answers.appendChild(b)});
+document.getElementById("finalTitle").textContent=CONFIG.finalTitle;document.getElementById("finalMessage").textContent=CONFIG.finalMessage;
+document.getElementById("finalBtn").addEventListener("click",()=>{document.getElementById("finalSecret").classList.toggle("hidden");document.getElementById("finalBtn").textContent=document.getElementById("finalSecret").classList.contains("hidden")?"Abrir mi mensaje final ✨":"Cerrar mensaje"});
+</script>
+</body></html>
